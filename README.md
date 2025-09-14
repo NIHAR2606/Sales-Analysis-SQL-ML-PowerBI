@@ -68,13 +68,14 @@ FROM stg_Churn
 GROUP BY Gender;
 ```
 ## View Creation
-
+```sql
 CREATE VIEW vw_ChurnData AS
 SELECT * FROM Prod_Churn WHERE Customer_Status IN ('Churned', 'Stayed');
 
 CREATE VIEW vw_JoinData AS
 SELECT * FROM Prod_Churn WHERE Customer_Status = 'Joined';
 
+```
 ## 🤖 Machine Learning Model
 
 ### Overview
