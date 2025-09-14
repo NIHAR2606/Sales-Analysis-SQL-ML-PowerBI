@@ -115,3 +115,35 @@ rf_model.fit(X_train, y_train)
 - **Demographic Splits:** Age, Gender, Marital Status
 - **Profiles by:** Contract, Tenure, Payment Method, State
 
+# 🔑 Key Insights
+
+- **Demographics:** Females over 50 = 31.5% of churners; main reason: competitor offers.
+- **Services:** Customers without Device Protection / Backup / Security churn at >60%.
+- **Service Quality:** Customers with internet/phone/paperless billing also churn → service issues.
+- **Contracts:** Month-to-month contracts have churn ≈ 46.5%.
+- **Revenue Impact:** Churned customers represent significant lost revenue.
+- **Predictions:** Model flagged 378 new joiners likely to churn.
+
+---
+
+# ⚙️ How to Run / Reproduce
+
+1. Run SQL scripts in `/sql/` to build `db_churn`, staging, production tables, and views.  
+2. Open `notebooks/churn_prediction.ipynb` → run preprocessing, train Random Forest model, generate predictions CSV.  
+3. Import SQL tables + prediction CSV into Power BI and refresh visuals.
+
+---
+
+# 🚀 Future Improvements
+
+- Balance dataset to improve ML precision for churners.  
+- Experiment with advanced models (XGBoost, LightGBM).  
+- Expand Power BI geographic analysis beyond top 5 states.  
+- Deploy ML model with Flask / Streamlit for live predictions.
+
+---
+
+# 👤 Author
+
+Project adapted and implemented by **Nihar Nagdeve**.
+
