@@ -66,8 +66,7 @@ SELECT Gender,
        (COUNT(Gender) * 100.0 / (SELECT COUNT(*) FROM stg_Churn)) AS Percentage
 FROM stg_Churn
 GROUP BY Gender;
-
-----
+```
 ## View Creation
 
 CREATE VIEW vw_ChurnData AS
