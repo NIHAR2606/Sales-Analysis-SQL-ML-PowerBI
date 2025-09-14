@@ -96,3 +96,16 @@ from sklearn.ensemble import RandomForestClassifier
 
 rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
 rf_model.fit(X_train, y_train)
+```
+### 📊 Power BI Dashboard
+**Executive Summary
+-KPIs: Total Customers, New Joiners, Total Churn, Churn Rate
+-Churn by: Gender, Age Group, Tenure, Contract, Payment Method, Internet Type
+-Churn by Geography (Top 5 states)
+-Service usage matrix (churn by services subscribed)
+---
+### Churn Prediction
+-Total predicted churners (from ML model)
+-Customer breakdown: ID, Revenue, Refunds, Referrals
+-Demographic splits (Age, Gender, Marital Status)
+-Profiles by Contract, Tenure, Payment Method, State
